@@ -14,6 +14,7 @@ export default class Portal extends React.Component {
   componentDidShow() {
     const tabBar = Taro.getTabBar(this.pageContext);
     tabBar.setSelected(0);
+    console.log('componentDidShow');
   }
 
   pageNavigateTo(path) {

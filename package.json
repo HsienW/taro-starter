@@ -61,6 +61,7 @@
 		"eslint-plugin-react": "7.8.2",
 		"eslint-plugin-react-hooks": "4.2.0",
 		"stylelint": "14.4.0",
-		"terser-webpack-plugin": "4.2.3"
+		"terser-webpack-plugin": "4.2.3",
+		"uglifyjs-webpack-plugin": "2.2.0"
 	}
 }
