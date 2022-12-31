@@ -33,15 +33,6 @@ const config = {
     },
     compile: {},
     module: {},
-    webpackChain(chain) {
-      chain.module
-        .rule('script')
-        .use('linariaLoader')
-        .loader('linaria/loader')
-        .options({
-          sourceMap: process.env.NODE_ENV !== 'production',
-        })
-    }
   },
   h5: {
     publicPath: '/',
@@ -49,12 +40,6 @@ const config = {
     module: {},
     esnextModules: [],
   },
-  terser: {
-    enable: true,
-    config: {
-      // 配置项同 https://github.com/terser/terser#minify-options
-    }
-  }
 }
 
 module.exports = function (merge) {
